@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
+
+/* Set custom variables here */
+
+:root {
+  --primary: #2e483a;
+  --light: #f6f3ed;
+
+  /* --bs-primary: #2e483a; */
+  --bs-primary-rgb: 46, 72, 58;
+
+  /* --bs-light: #f6f3ed; */
+  --bs-light-rgb: 246, 243, 237;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #2e483a;
+  --bs-btn-border-color: #2e483a;
+
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #3d5d4c;
+  --bs-btn-hover-border-color: #3d5d4c;
+
+  --bs-btn-active-bg: #456855;
+  --bs-btn-active-border-color: #456855;
+}
+
+
+.accordion-button:hover,
+.accordion-collapse:target {
+  background-color: #2e473a; /* Green background */
+  color: white; /* Change text color */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-brand {
+  color: #F6F3ED;
+}
+
+body {
+  font-family: "Sarala", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+}
+
+#hero {
+  height: 800px;
+  background-color: #E4E6DB;
+  background-image: url(../images/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero .d-flex {
+  height: 800px;
+}
+
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#cta .d-flex {
+  height: 400px;
+}
+
+section:not(#hero):not(#cta){
+  padding: 60px 0;
+}
+
+@media(min-width: 993px){
+  section:not(#hero):not(#cta){
+    padding: 100px 0;
+  }
+}
